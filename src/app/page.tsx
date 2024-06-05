@@ -11,7 +11,7 @@ const page = () => {
           <div className="col-span-2 px-6 lg:px-0 lg:pt-4">
             <div className="relative mx-auto text-center lg:text-left flex flex-col items-center lg:items-start ">
               <div className="absolute w-28 left-0 -top-20 hidden  lg:block">
-                <img src="/snake-1.png" />
+                <img src="/b.png" />
               </div>
               <h1 className="relative w-fit tracking-tighter text-balance mt-16 font-bold !leading-tight text-gray-900 text-5xl md:text-6xl lg:text-7xl">
                 Your Image on a{" "}
@@ -24,7 +24,8 @@ const page = () => {
                 Capture your favorite memories with your own,{" "}
                 <span className="font-semibold">Phone Case</span>
               </p>
-
+              hemanth kumar hemanth02135@gmail.com Default Organization 06 Jun
+              2024 ￼
               <ul className="mt-8 space-y-2 text-left font-medium flex flex-col items-center sm:items-start">
                 <div className="space-y-2">
                   <li className="flex gap-1.5 items-center text-left">
@@ -51,22 +52,22 @@ const page = () => {
                   <img
                     className="inline-block h-10 w-10 rounded-full "
                     src="/users/user-2.png"
-                    alt="user1"
+                    alt="user2"
                   />
                   <img
                     className="inline-block h-10 w-10 rounded-full "
                     src="/users/user-3.png"
-                    alt="user1"
+                    alt="user3"
                   />
                   <img
                     className="inline-block h-10 w-10 rounded-full "
                     src="/users/user-4.jpg"
-                    alt="user1"
+                    alt="user4"
                   />
                   <img
                     className="inline-block h-10 w-10 rounded-full "
                     src="/users/user-5.jpg"
-                    alt="user1"
+                    alt="user5"
                   />
                 </div>
                 <div className="flex flex-col justify-between items-center sm:items-start">
@@ -99,6 +100,14 @@ const page = () => {
             </div>
           </div>
         </MaxWidthWrapper>{" "}
+      </section>
+
+      {/*value section*/}
+
+      <section className="bg-slate-100 py-24">
+        <MaxWidthWrapper className="flex flex-col items-center gap-16 sm:gap-32">
+          <div className="flex flex-col lg:flex-row items-center gap-4 sm:"></div>
+        </MaxWidthWrapper>
       </section>
     </div>
   );
