@@ -2,7 +2,8 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Phone from "@/components/Phone";
 import Reviews from "@/components/Reviews";
 import { Icons } from "@/components/icons";
-import { Check, Star } from "lucide-react";
+import { ArrowRight, Check, Star } from "lucide-react";
+import NextLink from "next/link";
 import React from "react";
 
 const page = () => {
@@ -11,8 +12,8 @@ const page = () => {
       <section>
         <MaxWidthWrapper className="pb-24 pt-10 lg:grid lg:grid-cols-3 sm:pb-32 lg:gap-x-0 xl:gap-x-8 lg:pt-32 lg:pb-52">
           <div className="col-span-2 px-6 lg:px-0 lg:pt-4">
-            <div className="relative mx-auto text-center lg:text-left flex flex-col items-center lg:items-start ">
-              <div className="absolute w-28 left-0 -top-20 hidden  lg:block">
+            <div className="relative mx-auto text-center lg:text-left flex flex-col items-center lg:items-start">
+              <div className="absolute w-28 left-0 -top-20 hidden lg:block">
                 <img src="/snake-1.png" />
               </div>
               <h1 className="relative w-fit tracking-tighter text-balance mt-16 font-bold !leading-tight text-gray-900 text-5xl md:text-6xl lg:text-7xl">
@@ -31,7 +32,7 @@ const page = () => {
                 <div className="space-y-2">
                   <li className="flex gap-1.5 items-center text-left">
                     <Check className="h-5 w-5 shrink-0 text-blue-900" />
-                    High-Quality, duarable meterial
+                    High-Quality, durable material
                   </li>
                   <li className="flex gap-1.5 items-center text-left">
                     <Check className="h-5 w-5 shrink-0 text-blue-900" />5 year
@@ -39,34 +40,34 @@ const page = () => {
                   </li>
                   <li className="flex gap-1.5 items-center text-left">
                     <Check className="h-5 w-5 shrink-0 text-blue-900" />
-                    Modern iPhone models supported{" "}
+                    Modern iPhone models supported
                   </li>
                 </div>
               </ul>
               <div className="mt-12 flex flex-col sm:flex-row items-center sm:items-start gap-5">
                 <div className="flex -space-x-4">
                   <img
-                    className="inline-block h-10 w-10 rounded-full "
+                    className="inline-block h-10 w-10 rounded-full"
                     src="/users/user-1.png"
                     alt="user1"
                   />
                   <img
-                    className="inline-block h-10 w-10 rounded-full "
+                    className="inline-block h-10 w-10 rounded-full"
                     src="/users/user-2.png"
                     alt="user2"
                   />
                   <img
-                    className="inline-block h-10 w-10 rounded-full "
+                    className="inline-block h-10 w-10 rounded-full"
                     src="/users/user-3.png"
                     alt="user3"
                   />
                   <img
-                    className="inline-block h-10 w-10 rounded-full "
+                    className="inline-block h-10 w-10 rounded-full"
                     src="/users/user-4.jpg"
                     alt="user4"
                   />
                   <img
-                    className="inline-block h-10 w-10 rounded-full "
+                    className="inline-block h-10 w-10 rounded-full"
                     src="/users/user-5.jpg"
                     alt="user5"
                   />
@@ -100,11 +101,9 @@ const page = () => {
               <Phone className="w-64" imgSrc="/testimonials/1.jpg" />
             </div>
           </div>
-        </MaxWidthWrapper>{" "}
+        </MaxWidthWrapper>
       </section>
-
       {/*value section*/}
-
       <section className="bg-slate-100 py-24">
         <MaxWidthWrapper className="flex flex-col items-center gap-16 sm:gap-32">
           <div className="flex flex-col lg:flex-row items-center gap-4 sm:gap-6">
@@ -126,13 +125,13 @@ const page = () => {
               </div>
               <div className="text-lg leading-8">
                 <p>
-                  "The case feels durale And i even got a compliment on the"
+                  "The case feels durable And I even got a compliment on the
                   design. Has the case for two and a half months now and{" "}
                   <span className="p-0.5 bg-slate-800 text-white">
                     the image is super clear
                   </span>
-                  ,on the case i had before ,the image started fading into
-                  yellowish color after a couple weeks. love it"
+                  , on the case I had before, the image started fading into
+                  yellowish color after a couple weeks. Love it"
                 </p>
               </div>
               <div className="flex gap-4 mt-2">
@@ -163,13 +162,13 @@ const page = () => {
               <div className="text-lg leading-8">
                 <p>
                   "I usually keep my Phone together with my keys in my pocket
-                  and usually that led to some pretty heavy scratchmarks on all
-                  of my phoneCase .. This one,besides a barly noticable scratch
-                  on the corner"
+                  and usually that led to some pretty heavy scratch marks on all
+                  of my phoneCase .. This one, besides a barely noticeable
+                  scratch on the corner"
                   <span className="p-0.5 bg-slate-800 text-white">
                     looks brand new after about half a year
                   </span>
-                  .I dig it
+                  . I dig it
                 </p>
               </div>
               <div className="flex gap-4 mt-2">
@@ -192,6 +191,69 @@ const page = () => {
         <div className="pt-16">
           <Reviews />
         </div>
+      </section>
+
+      <section>
+        <MaxWidthWrapper className="py-24">
+          <div className="mb-12 px-6 lg:px-8">
+            <div className="mx-auto max-w-2xl sm:text-center">
+              <h2 className="order-1 mt-3 tracking-tight text-center text-balance !leading-tight font-bold text-5xl md:text-6xl text-gray-900">
+                Upload Your Photo and Get{" "}
+                <span className="relative px-2 text-blue-400">
+                  Your own case
+                </span>{" "}
+                now
+              </h2>
+            </div>
+          </div>
+
+          <div className="mx-auto max-w-6xl px-6 lg:px-8">
+            <div className="relative flex flex-col items-center md:grid grid-cols-2 gap-40">
+              <img
+                src="/arrow.png"
+                className="absolute top-[25rem] md:top-1/2 -translate-y-1/2 z-10 left-1/2 -translate-x-1/2 rotate-19 md:rotate-0"
+                alt="arrow"
+              />
+
+              <div className="relative h-80 md:h-full w-full md:justify-self-end max-w-sm rounded-xl bg-gray-900/5 ring-inset ring-gray-900/10 lg:rounded-2xl">
+                <img
+                  src="/horse.jpg"
+                  className="rounded:md object-cover bg-white shadow-2xl ring-1 ring-gray-900/10 h-full w-full"
+                  alt=""
+                />
+              </div>
+              <Phone className="w-60" imgSrc="/horse_phone.jpg" />
+            </div>
+          </div>
+
+          <ul className="mx-auto mt-12 max-w-porse sm:text-lg space-y-2 w-fit">
+            <li className="w-fit">
+              <Check className="h-5 w-5 text-gray-700 inline mr-1.5" />
+              High-quality silicone material
+            </li>
+            <li className="w-fit">
+              <Check className="h-5 w-5 text-gray-700 inline mr-1.5" />
+              Scratch and fingerprint resistant coating
+            </li>{" "}
+            <li className="w-fit">
+              <Check className="h-5 w-5 text-gray-700 inline mr-1.5" />
+              Wireless charging compatible
+            </li>{" "}
+            <li className="w-fit">
+              <Check className="h-5 w-5 text-gray-700 inline mr-1.5" />5 years
+              print warranty
+            </li>
+            <div className="flex justify-center">
+              <NextLink
+                href="/configure/upload"
+                className="flex items-center bg-slate-600 rounded p-3 text-white"
+              >
+                Create your own case
+                <ArrowRight className="h-4 w-4 ml-1.5" />
+              </NextLink>
+            </div>
+          </ul>
+        </MaxWidthWrapper>
       </section>
     </div>
   );
